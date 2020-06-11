@@ -76,12 +76,12 @@
       content: 'I tend to talk, ALOT 😬.'
     }); // will print whatever was typed in the field.
   
-  }).then(function () { // will be called when it is submitted.
-    return botui.message.bot({
-      delay: 1000,
-      type: 'embed',
-      content: 'https://i.giphy.com/media/rTapV77tqAWZO/giphy.webp'
-    });
+//   }).then(function () { // will be called when it is submitted.
+//     return botui.message.bot({
+//       delay: 1000,
+//       type: 'embed',
+//       content: 'https://i.giphy.com/media/rTapV77tqAWZO/giphy.webp'
+//     });
   
   }).then(function () {
     return botui.message.bot({
