@@ -1,4 +1,4 @@
-# [pratBot]('https://pratiksharaval.github.io/pratBot/')
+# [pratBot] : 'https://pratiksharaval.github.io/pratBot/'
 
 Click on the "[pratBot]('https://pratiksharaval.github.io/pratBot/')" to land on the webpage.
 
