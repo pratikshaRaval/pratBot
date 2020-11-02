@@ -570,7 +570,7 @@
       } else {
         botui.message.bot({ // second one
           delay: 1000, // wait 1 sec.
-          content: 'Check out my work [here](******)'
+          content: 'Check out my work [here]('https://github.com/pratikshaRaval')'
         })
       }
   
