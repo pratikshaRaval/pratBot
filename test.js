@@ -48,7 +48,7 @@
   }).then(function () {
     return botui.message.bot({ // second one
       delay: 1000, // wait 1 sec.
-      content: 'I am Pratiksha, a software development enthusiast currently pursuing MS at Santa Clara University 👩‍🎓'
+      content: 'I am Pratiksha, a Data Science enthusiast currently pursuing MS at Santa Clara University 👩‍🎓'
     });
   }).then(function (index) { // will send the index of the previous message to the showBookmark function which shows a star icon against the message.
     setTimeout(showBookmark(index), 1500);
@@ -68,25 +68,25 @@
   }).then(function (res) { // will be called when it is submitted.
     return botui.message.bot({
       delay: 500,
-      content: 'Alright ' + res.value + '! Before we get started a quick heads up',
+      content: 'Alright ' + res.value + '! Thank you for your interest.',
     });
   }).then(function () {
     return botui.message.bot({
       delay: 1200,
-      content: 'I tend to talk, ALOT 😬.'
+      content: 'I’m a techie and I love to make cool products. 🧚🏻 I’m passionate about building ML/AI products.'
     }); // will print whatever was typed in the field.
   
-//   }).then(function () { // will be called when it is submitted.
-//     return botui.message.bot({
-//       delay: 1000,
-//       type: 'embed',
-//       content: 'https://i.giphy.com/media/rTapV77tqAWZO/giphy.webp'
-//     });
+  }).then(function () { // will be called when it is submitted.
+    return botui.message.bot({
+      delay: 1000,
+      type: 'embed',
+      content: 'My main focus is in deep learning and I have been able to work on several great projects in NLP and Computer Vision through school and research! check it out here: https://github.com/pratikshaRaval'
+    });
   
   }).then(function () {
     return botui.message.bot({
       delay: 2000,
-      content: 'So feel free to skip the conversation by clicking the hamburger icon on the left and jumping to specific questions you have in mind'
+      content: 'Also, I am a Graduate Teaching Assistant for IS and Analytics students where I help them with the concepts.'
     });
   
   }).then(function () {
@@ -108,7 +108,7 @@
     if (res.value == 'reach_out') {
       return botui.message.bot({
         delay: 1000,
-        content: 'Shoot me a mail at pratiksharaval7@gmail.com',
+        content: 'Shoot me an email at pratiksharaval7@gmail.com',
   
       }).then(function (index) {
         setTimeout(showBookmark(index), 1500);
@@ -142,7 +142,7 @@
         if (res.value == 'work_ex') {
           return botui.message.bot({
             delay: 1000,
-            content: 'Prior to Santa Clara University, I was working as a Software Engineer at Allscripts, a leading healthcare IT in USA.'
+            content: 'Prior to Santa Clara University, I was working as a Software Engineer in Test at Allscripts, a leading healthcare IT in USA.'
           }).then(function (index) {
             setTimeout(showBookmark(index), 1500);
           }).then(function () {
@@ -178,7 +178,7 @@
             if (res.value == 'more') {
               return botui.message.bot({
                 delay: 1000,
-                content: 'While these experiences have helped me consolidate my learning of Human-centric logical processes, they have also made me aware of the intricacies involved in developing products and services which are shippable to the commercial market',
+                content: 'I designed and developed data dashboards for visualizing KPIs, track and analyze health of the business. This has made me aware of the intricacies involved in developing products and services which are shippable to the commercial market',
               }).then(function (index) {
                 setTimeout(showBookmark(index), 1500);
   
@@ -212,7 +212,7 @@
             return botui.message.bot({
               // show first message
               delay: 1000,
-              content: 'Having changed different schools while growing up, I can easily adapt to newer environments and attempt to understand and embrace change positively'
+              content: 'Having changed different schools while growing up, I can easily adapt to newer environments and attempt to understand and embrace change positively',
             });
           }).then(function (index) {
             setTimeout(showBookmark(index), 1500);
@@ -220,7 +220,7 @@
             return botui.message.bot({
               // show first message
               delay: 1000,
-              content: 'I pursued Computer Engineering in my undergrad which formally introduced me to the world that does the magic behind and beyond the screens 🖥️'
+              content: 'I pursued Computer Engineering in my undergrad which formally introduced me to the world that does the magic behind and beyond the screens 🖥️',
             });
           }).then(function (index) {
             setTimeout(showBookmark(index), 1500);
@@ -228,7 +228,7 @@
             return botui.message.bot({
               // show first message
               delay: 1000,
-              content: 'Questions like how would people make sense of the growing technology would fascinate me. This brought me to SCU to study Information Systems.'
+              content: 'Questions like how would people make sense of the growing technology would fascinate me. This brought me to SCU to study Information Systems.',
             });
           }).then(function (index) {
             setTimeout(showBookmark(index), 1500);
@@ -253,14 +253,14 @@
               return botui.message.bot({
                 // show first message
                 delay: 1000,
-                content: 'I have hands-on experience with both designing user interfaces and developing an Android app.',
+                content: 'I have hands-on experience with both designing user interfaces and developing an application',
               }).then(function (index) {
                 setTimeout(showBookmark(index), 1500);
               }).then(function () {
                 return botui.message.bot({
                   // show first message
                   delay: 1000,
-                  content: 'Play around the libraries and frameworks of React, Gatsby, Vue, Node.js, Express, Angular.js, docker, git, Webpack',
+                  content: 'I have keen interests in playing around the TensorFlow and Keras libraries. I train models to predict future and use data to help make decisions',
                 });
               }).then(function (index) {
                 setTimeout(showBookmark(index), 1500);
@@ -268,7 +268,7 @@
                 return botui.message.bot({
                   // show first message
                   delay: 1000,
-                  content: 'Comfortable with Java, Python, HTML, CSS/Saas, Javascript(ES6), Jquery',
+                  content: 'I dont stop there but use Visualization tools to to create impactful data report.',
                 });
               }).then(function (index) {
                 setTimeout(showBookmark(index), 1500);
@@ -276,7 +276,7 @@
                 return botui.message.bot({
                   // show first message
                   delay: 1000,
-                  content: 'Occasionally tinker with arduino and sensors to build interactive prototypes',
+                  content: 'Deploy the work on cloud using AWS, Azure and Docker for image containerization',
                 });
               }).then(function (index) {
                 setTimeout(showBookmark(index), 1500);
@@ -322,7 +322,7 @@
                   if (res.value == 'more') {
                     return botui.message.bot({
                       delay: 1000,
-                      content: 'While these experiences have helped me consolidate my learning of Human-centric logical processes, they have also made me aware of the intricacies involved in developing products and services which are shippable to the commercial market',
+                      content: 'I designed and developed data dashboards for visualizing KPIs, track and analyze health of the business. This has made me aware of the intricacies involved in developing products and services which are shippable to the commercial market',
                     }).then(function (index) {
                       setTimeout(showBookmark(index), 1500);
   
@@ -409,7 +409,7 @@
       return botui.message.bot({
         // show first message
         delay: 1000,
-        content: 'I have hands-on experience with both designing user interfaces and developing an Android app.'
+        content: 'I have hands-on experience with both designing user interfaces and developing an application.'
       });
     }).then(function (index) {
       setTimeout(showBookmark(index), 1500);
@@ -417,7 +417,7 @@
       return botui.message.bot({
         // show first message
         delay: 1000,
-        content: 'Play around the libraries and frameworks of React, Gatsby, Vue, Node.js, Express, Angular.js, docker, git, Webpack'
+        content: 'I have keen interests in playing around the TensorFlow and Keras libraries. I train models to predict future and use data to help make decisions',
       });
     }).then(function (index) {
       setTimeout(showBookmark(index), 1500);
@@ -425,7 +425,7 @@
       return botui.message.bot({
         // show first message
         delay: 1000,
-        content: 'Comfortable with Java, Python, HTML, CSS/Saas, Javascript(ES6), Jquery'
+        content: 'I dont stop there but use Visualization tools to to create impactful data report.'
       });
     }).then(function (index) {
       setTimeout(showBookmark(index), 1500);
@@ -433,7 +433,7 @@
       return botui.message.bot({
         // show first message
         delay: 1000,
-        content: 'Occasionally tinker with arduino and sensors to build interactive prototypes'
+        content: 'Deploy the work on cloud using AWS, Azure and Docker for image containerization'
       });
     }).then(function (index) {
       setTimeout(showBookmark(index), 1500);
@@ -445,18 +445,18 @@
     botui.message.bot({
       human: true,
       delay: 1000, // wait 1 sec.
-      content: 'Do you have a design philosophy'
+      content: 'Do you have a work philosophy'
     }).then(function () {
       return botui.message.bot({
         // show first message
         delay: 1000,
-        content: 'I am a strong believer in Usability over aesthetics and a Disciplined Pursuit of Less (minimalistic)'
+        content: 'I believe that communication is everything. Science and engineering are team sports. Any successful open-source project will have a strong emphasis on communication, collaboration, empathy, and respect - not just engineering'
       });
     }).then(function () {
       return botui.message.bot({
         // show first message
         delay: 1000,
-        content: 'The product should be useful above all. And this philosophy is reflected in all my work'
+        content: 'Also, I believe in nurturing and building communities. A group of passionate people who care about each other’s success is everything'
       });
     });
   
@@ -527,7 +527,7 @@
       return botui.message.bot({
         // show first message
         delay: 1000,
-        content: 'From wearable technologies to driverless cars, Internet of Things is giving life to a growing range of everyday objects. My interest lies in helping people adapt to these emerging modalities of technologies'
+        content: 'I am interested in designing high-performance machine learning methods that make sense to humans'
       });
     }).then(function () {
       return botui.message.bot({
@@ -586,12 +586,12 @@
       return botui.message.bot({
         // show first message
         delay: 200,
-        content: 'I view process and logical thinking as a tool to solve complex humanitarian problem and this philosophy is reflected in my work I undertook during my undergraduate',
+        content: 'One of my project uses NLP for auto text generation. It uses Keras and Tensorflow for word embeddings where the model is trained to learn the likelihood of occurrence of a word based on the previous sequence of words',
       });
     }).then(function () {
       return botui.message.bot({ // second one
         delay: 1000, // wait 1 sec.
-        content: 'While one of the projects focusses on connecting with professional photographers and letting them showcase their work through making portfolios that are perfect for inspiration and creative influence.',
+        content: 'While another one focuses on connecting with professional photographers and letting them showcase their work through making portfolios that are perfect for inspiration and creative influence.',
   
       })
     }).then(function () {
@@ -627,12 +627,12 @@
     }).then(function () {
       return botui.message.bot({ // second one
         delay: 1000, // wait 1 sec.
-        content: 'Keeping with my interest with emerging technologies, I am currently working on two projects. The first is a project to analyze data, creating a story using visualization and predicting stuffs using Machine Learning Models',
+        content: 'Keeping with my interest with emerging technologies, I am currently working on two projects. The first is a project is to create ETL dashboard for Caltrain riders where I extracted, interpreted and analyzed real-time data from Caltrain API to identify Key metrics and moved data to the Landing Bucket on AWS S3.',
       });
     }).then(function () {
       return botui.message.bot({ // second one
         delay: 1000, // wait 1 sec.
-        content: 'My second project is a little too explorative because this summer, I wondered what would it be like if one could capture and send smell. As a result, I am trying to build an electronic nose that can sense smell of food',
+        content: 'My second project is a little too explorative and I have worn a hat of an artist. I will be implementing Neural Style Transfer to make the user-input images resemble a painting from the predicted lesser-known artist.',
       });
     });
   }
